@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/milk"
+    android:theme="@android:style/Theme.Translucent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/activity_main_tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/logo"
+            android:text="QQ"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/activity_main_etUser"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="QQ号码/手机号/邮箱" />
+
+        <EditText
+            android:id="@+id/activity_main_etPwd"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="密码" />
+
+        <Button
+            android:id="@+id/activity_main_btnLogin"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/activity_main_tvQues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码"
+                android:textSize="15sp"
+                android:textColor="#00aaff"/>
+            <TextView
+                android:id="@+id/activity_main_tvNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新用户注册"
+                android:textSize="15sp"
+                android:textColor="#00aaff"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录即代表阅读并同意该条款"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textColor="#fff"/>
+
+</RelativeLayout>
